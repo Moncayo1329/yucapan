@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Yuca Pa</title> 
-    
-
-
 </head>
 
 <body>
-
-
-
     <div class="container">
-
         <div class="header">
-            <div class="header__logo">Yuca Pa!</div>
+            <div class="header__logo">Yuca pa!</div>
             <div class="header__menu">
-                <div class="header__menu-1">Home</div>
-                <div class="header__menu-2">About us</div>
-                <div class="header__menu-3">Contacts</div>
+                <a class="header__menu-1" href="#About_us">About us</a>
+                <a class="header__menu-2" href="#Order">Order</a>
+                <a class="header__menu-3" href="#contacts">Contacts</a>
             </div>
+        </div>
 
-            <form id="msform">
+        <section class="main-section" id="About_us">
+            <p>We are friends and we make pan de yuca with love!<br>
+             </p>
+        </section>
+
+        <section id="Order">
+            <form id="msform" action="/submit-form" method="POST">
                 <div class="shop" id="shop"> 
                   <div class="item"></div>
                   <div class="details">
@@ -36,7 +36,7 @@
                     <input type="text" id="name" placeholder="Name" required>
                     <input type="text" id="number" placeholder="Phone number" required>
                     
-                    <label for="precio">Price by unit 4$</label>
+                    <label for="precio">Price per unit: $4</label>
                     
                     <br>
                     
@@ -49,35 +49,17 @@
                     <button type="button" onclick="submitForm()">Buy now!</button>
                   </div>
                 </div>
-              </form>
-              
-     
+            </form>
+        </section>
 
+        <footer>
 
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-        </body>
+        <section id="contacts">
+            <p>You can contact us through phone or email. Also, check out our playlist for this week.</p>
+        </section>
+    </footer>
+    </div>
 
     <script src="main.js"></script>
-
-
-<!--<footer>
-
-    Copyright © 2023 Yuca Pa. All rights reserved.
-</footer>
-
-
-
-
-
-
+</body>
 </html>

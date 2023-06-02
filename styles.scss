@@ -2,6 +2,7 @@
     margin:0 ;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
 }
   
 
@@ -14,22 +15,8 @@ body{
 
 
 
-
-
-
-#size{
-    position: absolute; 
-    top: 60%;
-    left: 50%;
-    transform:translateX(-50%);
-    font-size: 35px;
-  color: red;
-
-}  
-
 .container{
 height: 100vh;
-
 }
 
 .header{
@@ -39,8 +26,11 @@ height: 100vh;
     justify-content: space-between;
     align-items: center;
 
+
     &__logo{
-        font-size: 6px;
+        font-size: 20px;
+        position: absolute;
+        left: 10px;
 
     }
 
@@ -57,143 +47,6 @@ height: 100vh;
 
 
 
-.main {
-    height: 80%;
-   // border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-
-   
-
-    &__text{
-        width: 50%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-     
-        &-1{
-          font-size: 10vw;
-        }
-        &-2,
-        &-3,
-        &-4 {
-        font-size: 5vw;
-
-        } 
-    }
-}
-
-
-
-.footer {
-    height: 10%;
-  //  border: 2px solid green;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap:20px;
-    margin-right: 10%;
-
-
-[class ^="footer__"]{
-img{
-  width: 5.3vw;
-
-}
-
-
-}
-
-}
-
-
-@media(max-width:650px){
-.header{ justify-content: center;
-    
-
-
-&__logo{
-
-    font-size: 15px;
-    position: absolute;
-    left: 6%;
-
-
-
-
-}
-
-
-
-
-}
-
-
-.main{  
-flex-direction:column;
-justify-content: center;
-align-items: center;
-
-&__image{ 
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    background-size: 100%;
-    background-position:center;
-
-}
-
-&__text{
-
-width: 100%;
-&-1{
- display: none;
-
-}
-
-&-2 ,
-&-3,
- &-4 {
-
-    font-size: 20px;
-
-
- }
-
-
-}
-
-
-
-
-
-
-}
-
-
-.footer{ 
-justify-content: center;
-margin: 0px;
-
-[class^="footer__"]{
-
-img{
-width: 45px;
-height: 45px;
-}
-
-}
-}
-
-}
-
-
-
-
-
 
 #msform{
     text-align: center;
@@ -205,12 +58,15 @@ height: 45px;
 	width: 80%;
 	border: 1px solid #ccc;
 	font-family: montserrat;
-	width: 250px;
+	width: 290px;
     font-weight: bold;
 	border-radius: 20px;
 	cursor: pointer;
 	padding: 50px;
   font-size: 15px;
+  margin-bottom: -10px; 
+  left: 15px;
+    
     
 }
 
@@ -218,5 +74,149 @@ height: 45px;
 
 
 
- 
+.main-section {
+    position:absolute;
+    margin-left: 9px;
+    margin-top: 50px;
+  }
 
+#contacts{
+margin-top: 600px;
+
+}
+
+//celular s
+
+@media(min-width:375px){
+    .header{ justify-content: right;
+    
+        &__logo{
+    
+            font-size: 20px;
+            position: absolute;
+            left: 6%;
+         
+        }
+
+        
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            font-size: 10px;
+            gap:15px;
+            position: absolute;
+            left: 220px;
+        }
+
+}
+
+
+
+#msform{
+ position: absolute;
+ left: 45px;
+
+}
+
+}  
+
+
+
+//celular 
+
+@media(min-width:425px){
+    .header{ justify-content: right;
+    
+        &__logo{
+    
+            font-size: 20px;
+            position: absolute;
+            left: 6%;
+         
+        }
+
+        
+        &__menu {
+            
+            position: absolute;
+            left: 250px;
+        }
+
+}
+
+
+
+#msform{
+ position: absolute;
+ left: 73px;
+
+}
+
+}
+
+//tablet
+
+
+@media(min-width:768px){
+    .header{ justify-content: right;
+    
+        &__logo{
+    
+            font-size: 20px;
+            position: absolute;
+            left: 6%;
+         
+        }
+
+        
+        &__menu {
+            
+            position: absolute;
+            left: 560px;
+        }
+
+}
+
+
+
+#msform{
+ position: absolute;
+ left: 250px;
+
+}
+
+}
+
+
+
+//laptop
+
+@media(min-width:1024px){
+    .header{ justify-content: right;
+    
+        &__logo{
+    
+            font-size: 20px;
+            position: absolute;
+            left: 6%;
+         
+        }
+
+        
+        &__menu {
+            
+            position: absolute;
+            left: 800px;
+        }
+
+}
+
+
+
+#msform{
+ position: absolute;
+ left: 400px;
+
+}
+
+}
