@@ -13,14 +13,14 @@
         <div class="header">
             <div class="header__logo">Yuca pa!</div>
             <div class="header__menu">
-                <a class="header__menu-1" href="#About_us">About us</a>
-                <a class="header__menu-2" href="#Order">Order</a>
-                <a class="header__menu-3" href="#contacts">Contacts</a>
+                <a class="header__menu-1" href="#About_us" style="color: black;">About us</a>
+                <a class="header__menu-2" href="#Order" style="color: black;">Order</a>
+                <a class="header__menu-3" href="#contacts" style="color: black;">Contacts</a>
             </div>
         </div>
 
         <section class="main-section" id="About_us">
-            <p>We are friends and we make pan de yuca with love!<br>
+            <p>We are friends and we make <br> pan de yuca with love!❤️
              </p>
         </section>
 
@@ -29,12 +29,12 @@
                 <div class="shop" id="shop"> 
                   <div class="item"></div>
                   <div class="details">
-                    <h2>Make your order</h2>
+                    <h2>Make your order ✉️</h2>
                     <input type="hidden" name="_subject" value="Nuevo pedido">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://pandeyuca.vercel.app/thanks.html">
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="text" id="number" placeholder="Phone number" required>
+                    <input type="text" style=" position: relative; bottom: 10px; right: 15px;" id="name" placeholder="Name" required>
+                    <input type="text" style=" position: relative; right: 15px;" id="number" placeholder="Phone number" required>
                     
                     <label for="precio">Price per unit: $4</label>
                     
@@ -46,7 +46,7 @@
                     
                     <br>
                     
-                    <button type="button" onclick="submitForm()">Buy now!</button>
+                    <button type="button" onclick="submitForm()" style="width: 120px; position: relative; top: 10px;">Buy now!</button>
                   </div>
                 </div>
             </form>

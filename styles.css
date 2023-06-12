@@ -10,6 +10,17 @@ body {
   background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
 }
 
+#About_us {
+  position: absolute;
+  left: 15%;
+}
+
+h2 {
+  position: absolute;
+  bottom: 85%;
+  left: 15%;
+}
+
 .container {
   height: 100vh;
 }
@@ -20,6 +31,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: black;
 }
 .header__logo {
   font-size: 20px;
@@ -49,7 +61,7 @@ body {
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
-  padding: 50px;
+  padding: 75px;
   font-size: 15px;
   margin-bottom: -10px;
   left: 15px;
@@ -59,6 +71,7 @@ body {
   position: absolute;
   margin-left: 9px;
   margin-top: 50px;
+  right: 30px;
 }
 
 #contacts {
@@ -85,6 +98,16 @@ body {
   #msform {
     position: absolute;
     left: 45px;
+  }
+}
+@media (min-width: 375px) {
+  h2 {
+    position: absolute;
+    left: 20%;
+  }
+  #About_us {
+    position: absolute;
+    left: 20%;
   }
 }
 @media (min-width: 425px) {
@@ -135,9 +158,30 @@ body {
   .header__menu {
     position: absolute;
     left: 800px;
+    font-size: 15px;
   }
   #msform {
     position: absolute;
-    left: 400px;
+    left: 375px;
+    padding: 80px;
+    font-size: 15px;
+    margin-bottom: -10px;
+    bottom: 40%;
+  }
+  #About_us {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #About_us {
+    position: absolute;
+    right: 25%;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) {
+  #About_us {
+    position: absolute;
+    left: 27%;
   }
 }/*# sourceMappingURL=styles.css.map */
